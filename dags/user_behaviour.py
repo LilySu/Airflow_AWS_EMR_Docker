@@ -17,7 +17,7 @@ from airflow.contrib.sensors.emr_step_sensor import EmrStepSensor
 unload_user_purchase ='./scripts/sql/filter_unload_user_purchase.sql'
 temp_filtered_user_purchase = '/temp/temp_filtered_user_purchase.csv'
 
-BUCKET_NAME = ''
+BUCKET_NAME = 'beginner-de-project'
 temp_filtered_user_purchase_key= 'user_purchase/stage/{{ ds }}/temp_filtered_user_purchase.csv'
 
 # existing local config
